@@ -1,8 +1,10 @@
 [
     {
-      "name": "div",
-      "string": "This is a dynamic div",
-      "attributes": "class='text-center'"
+      "name": "button",
+      "string": "cool button",
+      "attributes": "class='alert alert-warning'"
     }
-  ]
+
+    
+]
   
