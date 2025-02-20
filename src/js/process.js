@@ -7,32 +7,47 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return response.json();
       })
-      .then(data => {
-        const container = document.getElementById('container');
-        if (container) {
-          container.innerHTML = ''; // Clear previous content
-          data.forEach(element => {
-            const newElement = document.createElement(element.name);
-            newElement.innerHTML = element.string;
-            if (element.attributes) {
-              const attributes = element.attributes.split(' ');
-              attributes.forEach(attr => {
-                const [key, value] = attr.split('=');
-                if (key === 'class' && value) {
-                  // Handle multiple classes
-                  newElement.className = value.replace(/['"]+/g, '');
-                } else if (value) {
-                  newElement.setAttribute(key, value.replace(/['"]+/g, ''));
-                }
-              });
-            }
-            container.appendChild(newElement);
-          });
-        } else {
-          console.error('Container element not found.');
+      .then(data => updateContainer(data))
+      .catch(error => displayError(error.message));
+  };
+
+  const updateContainer = (data) => {
+    const container = document.getElementById('container');
+    if (container) {
+      container.innerHTML = ''; // Clear previous content
+      data.forEach(element => {
+        const newElement = document.createElement(element.name);
+        newElement.innerHTML = element.string;
+        if (element.attributes) {
+          setAttributes(newElement, element.attributes);
         }
-      })
-      .catch(error => console.error('Error fetching or parsing JSON:', error));
+        container.appendChild(newElement);
+      });
+    } else {
+      console.error('Container element not found.');
+    }
+  };
+
+  const setAttributes = (element, attributesString) => {
+    const attributes = attributesString.split(' ');
+    attributes.forEach(attr => {
+      const [key, value] = attr.split('=');
+      if (key === 'class' && value) {
+        // Handle multiple classes
+        element.className = value.replace(/['"]+/g, '');
+      } else if (value) {
+        element.setAttribute(key, value.replace(/['"]+/g, ''));
+      }
+    });
+  };
+
+  const displayError = (message) => {
+    const errorContainer = document.getElementById('error-container');
+    if (errorContainer) {
+      errorContainer.innerHTML = `<p style="color: red;">Error: ${message}</p>`;
+    } else {
+      console.error('Error container element not found.');
+    }
   };
 
   fetchData(); // Initial fetch
