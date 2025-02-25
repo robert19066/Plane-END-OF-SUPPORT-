@@ -70,17 +70,21 @@ Example Plane element:
 ```
 
 
-### 🔗 Resources
-[fnm](https://github.com/Schniz/fnm) -> I used it for my Node.js instalation.Is more straightforward,and more reliable than chocolately
-[Node.js](https://nodejs.org/api/all.html) -> You will use it.ALOT
-[W3 Schools JS tutorial](https://www.w3schools.com/js/DEFAULT.asp) -> Thank you W3 Schools for the best JS tutorial i ever saw!
-[React](https://react.dev/learn) -> I inspired from React
-[SASS](https://sass-lang.com/documentation/) -> better css
-[Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) -> Boostrap.Verry useful if you don't want touch CSS
 
+### 🔗 Resources
+| Resource                                                                    | Usage                                                                                            |
+|-----------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| [fnm](https://github.com/Schniz/fnm)                                        | I used it for my Node.js instalation.Is more straightforward,and more reliable than chocolately. |
+| [Node.js](https://nodejs.org/api/all.html)                                  | You will use it,ALOT.                                                                            |
+| [W3 Schools JS tutorial](https://www.w3schools.com/js/DEFAULT.asp)          | Thank you W3 Schools for the best JS tutorial i ever saw.                                        |
+| [React](https://react.dev/learn)                                            | I inspired from react                                                                            |
+| [SASS](https://sass-lang.com/documentation/)                                | better CSS                                                                                       |
+| [Boostrap](https://getbootstrap.com/docs/5.0/getting-started/introduction/) | Verry useful if you don't want touch CSS                                                         |
 
 ### ❤️ Credits
 
-[Atelierele Tamarei/Tamara's Workshop](https://ateliereletamarei.ro/) -> Thank you for helping me reach such a performance!
-[Microsoft Copilot](https://copilot.microsoft.com/chats/HoGaWfiN62FDTjUJzfdYB) -> Microsoft,you finaly did something right... It helped me debuging alot.
-You! -> For actively supporting and donwloading this framework!
+| Credit                                                                       | My opinion                                                                     |
+|--------------------------------------------------------------------------------|---------------------------------------------------------------------------|
+| [Atelierele Tamarei/Tamara's Workshop](https://ateliereletamarei.ro/)          | Thank you for helping me reach such a performance!                        |
+| [Microsoft Copilot](https://copilot.microsoft.com/chats/HoGaWfiN62FDTjUJzfdYB) | Microsoft,you finaly did something useful... It helped me debuging a lot. |
+| You!                                                                           | For actively supporting and donwloading this framework!                   |
