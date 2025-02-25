@@ -14,6 +14,7 @@ Welcome to the **Official Plane** documentation! This guide will help you naviga
 - **Real-time code updation** - With Zap!
 - **In-page error support** - No more terminal!
 - **No HTML** - The Neutron compiler transforms JSON into HTML
+- **Full Gulp.js support** - Automation at the next level
 
 
 ## 🛠 Installation
@@ -28,10 +29,16 @@ npm install create-plane-app
 ```bat
 npx create-plane-app <your app name>
 ```
-5. **Run the project**: Run this command:
+5. **Start Gulp**: Run this command:
+```bat
+gulp
+```
+6. **Run project**: Finaly,run this command
 ```bat
 npm run dev
 ```
+
+
 *NOTE: Plane uses for now Vite as its development tool,but in V0.0.6 PRE,it will use Zap.This command works for both*
 
 ## 🖥️ Coding
