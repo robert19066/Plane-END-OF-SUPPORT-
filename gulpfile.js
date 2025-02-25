@@ -1,5 +1,5 @@
-const gulp = require('gulp');
-const shell = require('gulp-shell');
+import gulp from 'gulp';
+import shell from 'gulp-shell';
 
 gulp.task('install-dependencies', shell.task([
   'npm install'
