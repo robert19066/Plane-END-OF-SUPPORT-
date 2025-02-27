@@ -4,12 +4,3 @@
   }
 
   
-
-  
-  // Example usage
-
-
-  
-  // Export the HTML string as a named export
-  
-  

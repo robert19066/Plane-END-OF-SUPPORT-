@@ -1,143 +1,93 @@
 // The elements
 
+import { alphaT } from "three/webgpu";
+
 export const nothing = "";
 
-export function div({ text = "", args = "", nest = "" }) {
-    return `<div ${args}>${text}${nest}</div>`;
+export function div({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<div class='${htmlClass}' id='${id}' ${args}>${text}${nest}</div>`;
 }
 
-export function p({ text = "", args = "", nest = "" }) {
-    return `<p ${args}>${text}${nest}</p>`;
+export function h1({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h1 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h1>`;
 }
 
-export function h1({ text = "", args = "", nest = "" }) {
-    return `<h1 ${args}>${text}${nest}</h1>`;
+export function h2({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h2 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h2>`;
 }
 
-export function h2({ text = "", args = "", nest = "" }) {
-    return `<h2 ${args}>${text}${nest}</h2>`;
+export function h3({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h3 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h3>`;
 }
 
-export function h3({ text = "", args = "", nest = "" }) {
-    return `<h3 ${args}>${text}${nest}</h3>`;
+export function h4({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h4 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h4>`;
 }
 
-export function h4({ text = "", args = "", nest = "" }) {
-    return `<h4 ${args}>${text}${nest}</h4>`;
+export function h5({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h5 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h5>`;
 }
 
-export function h5({ text = "", args = "", nest = "" }) {
-    return `<h5 ${args}>${text}${nest}</h5>`;
+export function h6({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<h6 class='${htmlClass}' id='${id}' ${args}>${text}${nest}</h6>`;
 }
 
-export function h6({ text = "", args = "", nest = "" }) {
-    return `<h6 ${args}>${text}${nest}</h6>`;
+export function p({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<p class='${htmlClass}' id='${id}' ${args}>${text}${nest}</p>`;
 }
 
-export function a({ text = "", args = "", nest = "" }) {
-    return `<a ${args}>${text}${nest}</a>`;
+export function a({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<a class='${htmlClass}' id='${id}' ${args}>${text}${nest}</a>`;
 }
 
-export function img({ text = "", args = "", nest = "" }) {
-    return `<img ${args}>${text}${nest}`;
+export function span({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<span class='${htmlClass}' id='${id}' ${args}>${text}${nest}</span>`;
 }
 
-export function span({ text = "", args = "", nest = "" }) {
-    return `<span ${args}>${text}${nest}</span>`;
+export function ul({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<ul class='${htmlClass}' id='${id}' ${args}>${text}${nest}</ul>`;
 }
 
-export function ul({ text = "", args = "", nest = "" }) {
-    return `<ul ${args}>${text}${nest}</ul>`;
+export function ol({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<ol class='${htmlClass}' id='${id}' ${args}>${text}${nest}</ol>`;
 }
 
-export function ol({ text = "", args = "", nest = "" }) {
-    return `<ol ${args}>${text}${nest}</ol>`;
+export function li({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<li class='${htmlClass}' id='${id}' ${args}>${text}${nest}</li>`;
 }
 
-export function li({ text = "", args = "", nest = "" }) {
-    return `<li ${args}>${text}${nest}</li>`;
+export function table({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<table class='${htmlClass}' id='${id}' ${args}>${text}${nest}</table>`;
 }
 
-export function table({ text = "", args = "", nest = "" }) {
-    return `<table ${args}>${text}${nest}</table>`;
+export function tr({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<tr class='${htmlClass}' id='${id}' ${args}>${text}${nest}</tr>`;
 }
 
-export function tr({ text = "", args = "", nest = "" }) {
-    return `<tr ${args}>${text}${nest}</tr>`;
+export function th({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<th class='${htmlClass}' id='${id}' ${args}>${text}${nest}</th>`;
 }
 
-export function th({ text = "", args = "", nest = "" }) {
-    return `<th ${args}>${text}${nest}</th>`;
+export function td({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<td class='${htmlClass}' id='${id}' ${args}>${text}${nest}</td>`;
 }
 
-export function td({ text = "", args = "", nest = "" }) {
-    return `<td ${args}>${text}${nest}</td>`;
+export function form({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<form class='${htmlClass}' id='${id}' ${args}>${text}${nest}</form>`;
 }
 
-export function form({ text = "", args = "", nest = "" }) {
-    return `<form ${args}>${text}${nest}</form>`;
+export function i({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<i class='${htmlClass}' id='${id}' ${args}>${text}${nest}</i>`;
 }
 
-export function input({ text = "", args = "", nest = "" }) {
-    return `<input ${args}>${text}${nest}`;
+export function strong({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<strong class='${htmlClass}' id='${id}' ${args}>${text}${nest}</strong>`;
 }
 
-export function button({ text = "", args = "", nest = "" }) {
-    return `<button ${args}>${text}${nest}</button>`;
+export function em({htmlClass = "", id = "", nest = "", args = "", text = ""}) {
+    return `<em class='${htmlClass}' id='${id}' ${args}>${text}${nest}</em>`;
 }
 
-export function textarea({ text = "", args = "", nest = "" }) {
-    return `<textarea ${args}>${text}${nest}</textarea>`;
-}
-
-export function select({ text = "", args = "", nest = "" }) {
-    return `<select ${args}>${text}${nest}</select>`;
-}
-
-export function option({ text = "", args = "", nest = "" }) {
-    return `<option ${args}>${text}${nest}</option>`;
-}
-
-export function label({ text = "", args = "", nest = "" }) {
-    return `<label ${args}>${text}${nest}</label>`;
-}
-
-export function header({ text = "", args = "", nest = "" }) {
-    return `<header ${args}>${text}${nest}</header>`;
-}
-
-export function footer({ text = "", args = "", nest = "" }) {
-    return `<footer ${args}>${text}${nest}</footer>`;
-}
-
-export function section({ text = "", args = "", nest = "" }) {
-    return `<section ${args}>${text}${nest}</section>`;
-}
-
-export function article({ text = "", args = "", nest = "" }) {
-    return `<article ${args}>${text}${nest}</article>`;
-}
-
-export function aside({ text = "", args = "", nest = "" }) {
-    return `<aside ${args}>${text}${nest}</aside>`;
-}
-
-export function nav({ text = "", args = "", nest = "" }) {
-    return `<nav ${args}>${text}${nest}</nav>`;
-}
-
-export function main({ text = "", args = "", nest = "" }) {
-    return `<main ${args}>${text}${nest}</main>`;
-}
-
-export function address({ text = "", args = "", nest = "" }) {
-    return `<address ${args}>${text}${nest}</address>`;
-}
-
-export function strong({ text = "", args = "", nest = "" }) {
-    return `<strong ${args}>${text}${nest}</strong>`;
-}
-
-export function i({ text = "", args = "", nest = "" }) {
-    return `<i ${args}>${text}${nest}</i>`;
+export function img({htmlClass = "", href = "", alt="", nest = "", id="" }) {
+    return `<img class='${htmlClass}' id='${id}' href='${href}' alt='${alt}'>${nest}</img>`;
 }
