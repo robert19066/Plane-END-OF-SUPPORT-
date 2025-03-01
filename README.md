@@ -1,4 +1,5 @@
-# ✈️ Official Plane Documentation(OUTDATED)
+# ✈️ Official Plane Documentation
+*THIS FRAMEWORK REACHED END-OF-SUPPORT*
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/ecec99cb-ed57-453c-8c7f-787ff41a9577" alt="Official Plane Documentation" width="600"/>
@@ -95,3 +96,10 @@ Example Plane element:
 | [Atelierele Tamarei/Tamara's Workshop](https://ateliereletamarei.ro/)          | Thank you for helping me reach such a performance!                        |
 | [Microsoft Copilot](https://copilot.microsoft.com/chats/HoGaWfiN62FDTjUJzfdYB) | Microsoft,you finaly did something useful... It helped me debuging a lot. |
 | You!                                                                           | For actively supporting and donwloading this framework!                   |
+
+
+
+# IMPORTANT MESAGE
+
+#### Unfortuantly,Plane reached End-Of-Support.
+#### It will be preceded by Juno.js
