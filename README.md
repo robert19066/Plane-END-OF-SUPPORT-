@@ -1,4 +1,4 @@
-# ✈️ Official Plane Documentation
+# ✈️ Official Plane Documentation(end of support womp womp 😿)
 *THIS FRAMEWORK REACHED END-OF-SUPPORT, IT WON'T RECEVE ANY UPDATES AND IT WILL BE SOON DELETED, STOP USING IT!*
 
 <p align="center">
